@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0045)http://nacaointerativa.com.br/joao_maria.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title> ..: João e Maria :..</title>
+	<style>
+		body{
+			margin:20px;
+			font-family:Verdana;
+			font-size:11px;
+		}
+		td,th{
+			font-family:Verdana;
+			font-size:11px;
+		}
+	</style>
+</head>
+
+<body>
+<h1>João e Maria</h1>
+<h3>Introdução</h3>
+João e Maria são alunos da 3a. série primária.<br>
+Eles são os melhores alunos e sempre estão disputando a liderança da turma e, para receber elogios e notas usam de todos os recursos.<br>
+Além das notas, costumam presentear a professora com frutas.<br>
+A professora, notando a artimanha dos alunos, decidiu acirrar a competição.<br>
+<br>
+"A partir de hoje, vou levar pra casa apenas 3 frutas."<br>
+<br>
+João sempre leva maçãs e Maria peras. Levam conforme suas maes compram, ou seja, há dias que um deles não leva nada, outros que ambos levam varias frutas. Chegavam a levar até um maximo de 5 frutas!<br>
+<br>
+"Vou levar as frutas de ambos, mas a preferência vai ser para o aluno que tiver a melhor nota nos testes.", disse a professora.<br>
+<br>
+Todos os dias, a professora fazia uma avaliação da matéria da véspera. No dia seguinte ela verificava o melhor e aceitava os presentes conforme a regra estabelecida e tomava nota dos resultados nesta planilha.<br>
+<br>
+<hr><br>
+<br>
+<table cellspacing="0" cellpadding="3" border="1" width="500" id="tabela">
+	<tbody><tr>
+		<th>Dia
+		</th><th>Peras
+		</th><th>Maçãs
+		</th><th>Melhor Aluno
+		</th><th>Fruta 1
+		</th><th>Fruta 2
+		</th><th>Fruta 3
+	</th></tr>
+
+</tbody></table>
+<br>
+<span id="result">
+
+<br>
+</span>
+
+<br>
+<hr><br>
+<br>
+<h3>Exercício:</h3>
+Faça um programa que leia os dados dessa planilha, preencha as lacunas com as frutas que foram levadas e mostre o total de cada.<br>
+<br>
+- No algoritmo fazer o preenchimento de dados aleatórios.<br>
+- Exibir a planilha preenchida.<br>
+- Usar Javascript.<br>
+
+
+<h3>Regra:</h3> 
+A regra é: levar no máximo 3 frutas começando a pegar do aluno que tiver melhor nota.<br>
+<br>
+Exemplos:<br>
+<br>
+1) Se João levou 3 maçãs e naquele dia ele teve a melhor nota, a professora vai levar 3 maçãs embora, nao importando a quantidade de peras da Maria.<br>
+<br>
+2) Se João levou 2 maçãs e a Maria levou 2 peras, a professora tem que levar 3 frutas do mesmo jeito. Sendo João o melhor aluno, ela irá levar 2 maçãs e 1 pera.<br>
+<br>
+3) Se João levar 0 maçãs, e Maria levar 1 pera, mesmo João sendo o melhor aluno, a professora levará 1 pera e 0 maçãs.<br>
+<br>
+4) se João levar 5 maçãs, e Maria levar 1 pera, caso a Maria seja a melhor aluna, a professora levará 1 pera e 2 maçãs. Observação, a ordem neste dia ficaria: pera - maçã - maçã.<br>
+<br>
+ 
+<h3>Dica: </h3>
+<pre>
+limite = 5;
+n = parseInt(Math.random()*limite); // limite não incluso
+tabela = '&lt;table border=1&gt;';
+tabela +='&lt;tr&gt;';
+tabela +='&lt;td&gt;Numero Sorteado: &lt;/td&gt;';
+tabela +='&lt;td&gt;'+n+'&lt;/td&gt;';
+tabela +='&lt;/tr&gt;';
+tabela +='&lt;/table&gt;&lt;br&gt;&lt;br&gt;';
+document.write(tabela);
+
+</pre>
+<br><br><br>
+
+<script src="main.js"></script>
+
+</body></html>
